@@ -1,0 +1,20 @@
+{
+    "best_model": "neural_network",
+    "best_accuracy": 0.8327663046889711,
+    "validation_method": "cv",
+    "params": {
+        "hidden_dims": [
+            64,
+            32
+        ],
+        "dropout": 0.3,
+        "lr": 0.001,
+        "epochs": 100,
+        "batch_size": 32,
+        "patience": 15,
+        "val_fraction": 0.15,
+        "random_state": 42,
+        "step_size": 10,
+        "gamma": 0.9
+    }
+}
