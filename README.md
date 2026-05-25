@@ -27,7 +27,7 @@ ML-пайплайн для задачи Kaggle Titanic.
 * CatBoost.
 * lightgbm.
 * xgboost.
-* Stacking c CatBoost и lightgbm
+* Stacking c CatBoost и xgboost.
 * Нейронная сеть.
 ## Результаты
 По результатам валидации была выбрана Нейронная сеть с методом K-Fold и accuracy 0,8328.  
