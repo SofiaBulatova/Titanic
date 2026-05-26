@@ -32,3 +32,18 @@ ML-пайплайн для задачи Kaggle Titanic.
 ## Результаты
 По результатам валидации была выбрана Нейронная сеть с методом K-Fold и accuracy 0,8328.  
 На Kaggle Public Score - 0,78229
+## Установка и запуск
+1. **Клонировать репозиторий**
+   ```bash
+   git clone https://github.com/SofiaBulatova/Titanic.git
+   cd Titanic
+2. **Создать и активировать окружение**
+   ```bash
+   python -m venv venv
+   venv\Scripts\activate
+4. **Установить зависимости**
+   ```bash
+   pip install -r requirements.txt
+5. **Запустить обучение**
+   ```bash
+   python main.py
