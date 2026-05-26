@@ -8,6 +8,13 @@ from sklearn.model_selection import train_test_split
 
 # Создаем нейросеть
 class MyNN(nn.Module):
+    """
+       Простая полносвязная нейронная сеть.
+
+       Архитектура: входной слой -> последовательность скрытых слоёв (Linear + BatchNorm1d + ReLU + Dropout)
+       -> выходной слой на 2 нейрона (логиты для бинарной классификации).
+
+       """
     def __init__(self, input_dim: int, hidden_dims: list[int], dropout: float):
         super().__init__()
         layers = []
@@ -29,6 +36,10 @@ class MyNN(nn.Module):
 
 # Определяем обучение и пресказание
 class NeuralNet(BaseEstimator, ClassifierMixin):
+    """
+        Реализует sklearn-совместимый интерфейс с методами `fit`, `predict` и `predict_proba`
+
+        """
 
     def __init__(self, hidden_dims, dropout, lr, epochs, batch_size, random_state, patience, val_fraction, step_size, gamma):
         self.hidden_dims = hidden_dims
